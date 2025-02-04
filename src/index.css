@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: rgb(22, 18, 18);
+  font-family: monospace;
+  
+}
+
+.app{
+  background-image: url(./img/weather.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.container{
+  width: 700px;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding-top: 50px;
+  padding: 50px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.container h2{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: rgb(7, 7, 7);
+}
+
+.container h1{
+  margin: 0px auto;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.city{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.city button{
+  padding: 8px 15px;
+  background: none;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.city button:active{
+  background-color: rgb(48, 53, 87);
+}
+
+.map{
+  flex: 1;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 800px){
+  .app{
+    display: flex;
+    flex-direction: column;
+  }
+}
